@@ -1,4 +1,4 @@
-#Kasper Roland Pagh database assignement 1
+# Kasper Roland Pagh database assignement 1
 
 
 This project is written in java, and as such you need all the usual java stuff to run it (jdk etc.)
@@ -23,19 +23,19 @@ the DB's functionality, such as various searches and saves and stuff.
 (you can run the app, by right-clicking the main in IntelliJ and pressing run)
 
 
-#About the DB
--Takes entries containing an integer key, and a String value (see main for some examples)
--saves the data as binary ASCII (oh yeah no non-ascii chars either please)
--Saves to the file simply called Data in the project root.
--Has an index (a hashmap) where the individual keys are stored, along with the bit offset of the data 
+# About the DB
+- Takes entries containing an integer key, and a String value (see main for some examples)
+- saves the data as binary ASCII (oh yeah no non-ascii chars either please)
+- Saves to the file simply called Data in the project root.
+- Has an index (a hashmap) where the individual keys are stored, along with the bit offset of the data 
 (eg. {key:1 | "160-580"} meaning that the data belonging to key 1 is between the 160'th and 580'th bit in the DB)
 
 
 
 List of features:
--Save
--Read all
--Read one
+- Save
+- Read all
+- Read one
 
 List of non exsisting features/bugs etc (things you CAN'T DO)
 - Delete
