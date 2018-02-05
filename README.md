@@ -29,6 +29,8 @@ the DB's functionality, such as various searches and saves and stuff.
 - Saves to the file simply called Data in the project root.
 - Has an index (a hashmap) where the individual keys are stored, along with the bit offset of the data 
 (eg. {key:1 | "160-580"} meaning that the data belonging to key 1 is between the 160'th and 580'th bit in the DB)
+- If you want to recreate the index, you just have to call the setIndexMap method in the Database class, and it will read the file
+and recreate the index.
 
 
 
