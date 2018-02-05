@@ -51,6 +51,7 @@ PS. I know this is kindda lazy (with a lot of holes - yeah i know) but i had my 
 I hope you can find some sense to this mess anyways :) 
 
 PPS. Sorry again for providing such platform and IDE specific instructions, i usually hate it myself, when people do that to me.
+Again the problem arises, because i can't figure out how to make Java set the entry point for the app to Main. Hope it's ok
 
 
 
