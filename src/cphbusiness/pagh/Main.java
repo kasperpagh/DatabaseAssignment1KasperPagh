@@ -28,7 +28,7 @@ public class Main
             System.out.println("her er find with index: " + db.findWithIndex(52));
             System.out.println("her er find with index: " + db.findWithIndex(1));
 
-            System.out.println(db.dbReader()); // I print the entire DB
+            System.out.println("Here is the entire database: " + db.dbReader()); // I print the entire DB
         }
         catch (UnsupportedEncodingException e)
         {
