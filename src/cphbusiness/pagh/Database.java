@@ -65,7 +65,6 @@ public class Database
         File file;
         file = new File("data");
 
-        System.out.println("her er len: " + file.length());
         byte[] result = new byte[(int) file.length()];
         try
         {
@@ -144,11 +143,19 @@ public class Database
         }
     }
 
-    public String findWithIndex(int key)
+    public String findWithIndex(int key) throws UnsupportedEncodingException
     {
-//        int index = indexMap.get("" + key);
-//        dbReader();
-        return "";
+        String index = indexMap.get("" + key);
+        String[] bitBorders = index.split("-");
+
+        try
+        {
+            return dbReader().substring(Integer.parseInt(bitBorders[0]) / 8, Integer.parseInt(bitBorders[1]) / 8);
+        }
+        catch (ArrayIndexOutOfBoundsException e)
+        {
+            return dbReader().substring(Integer.parseInt(bitBorders[0]) / 8);
+        }
     }
 
 
@@ -157,35 +164,24 @@ public class Database
         String db = dbReader();
         indexMap = new HashMap<>();
         List<String> keys = new ArrayList<>();
-        Pattern p = Pattern.compile("\\d");
+        Pattern p = Pattern.compile("\\d+");
         Matcher m = p.matcher(db);
-        System.out.println("her er bob " + db);
-
         while (m.find())
         {
             keys.add(m.group());
         }
 
-        char[] chars = db.toCharArray(); //FUUUUUUUUUUUUUUUUUUUUUUUUUUUCKKK
-
         for (int i = 0; i < keys.size(); i++)
         {
-            for (int a = 0; a < chars.length; a++)
+            if (i == keys.size() - 1)
             {
-                if (keys.get(i).charAt(0) == chars[a])
-                {
-                    System.out.println("first if");
-                    indexMap.put(keys.get(i), (a * 8) - 8 + "");
-                    if (i > 0)
-                    {
-
-                }
-                }
+                indexMap.put(keys.get(i), ((db.indexOf(keys.get(i)) * 8) - 8) + "-");
             }
+            else
+            {
+                indexMap.put(keys.get(i), (db.indexOf(keys.get(i)) * 8) - 8 + "-" + ((db.indexOf(keys.get(i + 1)) * 8) - 8));
+            }
+
         }
-
-
-        System.out.println("her er keys: " + indexMap.toString() + " llama " + indexMap.get("2"));
-
     }
 }
