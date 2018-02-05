@@ -15,7 +15,7 @@ $- git clone https://github.com/kasperpagh/DatabaseAssignment1KasperPagh.git
 Open the code in you favorite IDE in your favorite OS.
 I have only tested in IntelliJ, so you might have to run it through that as well, if it fucks up. 
 As I said i'd have liked to make a more "general" way of running it, but i'm drowning in bugs here ^-^).
-In case you can make Java understand what you manifest file, i have included the class files in the <i>out</i> directory.
+In case you can make Java understand the manifest file, i have included the class files in the <i>out</i> directory.
 
 
 Otherwise Please have a look at the main method, within the Main class, where you will find tests of most of 
