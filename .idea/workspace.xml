@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="KasperDB" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="402acf52-6de9-4a52-9570-6e6b0503b983" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/cphbusiness/pagh/Database.java" afterPath="$PROJECT_DIR$/src/cphbusiness/pagh/Database.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/Database.class" afterPath="$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/Database.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/Db2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/Main.class" afterPath="$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/Main.class" />
+      <change beforePath="$PROJECT_DIR$/src/cphbusiness/pagh/Db2.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/cphbusiness/pagh/Main.java" afterPath="$PROJECT_DIR$/src/cphbusiness/pagh/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,38 +27,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cphbusiness/pagh/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="442">
+              <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cphbusiness/pagh/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#dbWriter#0;class#Database#0" expanded="false" />
-                <element signature="method#dbReader#0;class#Database#0" expanded="false" />
-                <element signature="method#finder#0;class#Database#0" expanded="false" />
-                <element signature="method#findWithIndex#0;class#Database#0" expanded="false" />
-                <element signature="method#setIndexMap#0;class#Database#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cphbusiness/pagh/DataModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -92,6 +72,9 @@
         <option value="$PROJECT_DIR$/data" />
         <option value="$PROJECT_DIR$/src/cphbusiness/pagh/Database.java" />
         <option value="$PROJECT_DIR$/src/cphbusiness/pagh/Main.java" />
+        <option value="$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/MANIFEST.txt" />
+        <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/MANIFEST.txt" />
       </list>
     </option>
   </component>
@@ -174,7 +157,15 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/KasperPaghDB" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kaspe\Documents\Skole\sem2\DB\DatabaseAssignment1KasperPagh\out\production\DatabaseAssignmentOneKasperPagh\cphbusiness\pagh" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -242,15 +233,16 @@
       <workItem from="1517761134003" duration="11399000" />
       <workItem from="1517781579600" duration="3708000" />
       <workItem from="1517816341950" duration="10590000" />
-      <workItem from="1517834466064" duration="4085000" />
+      <workItem from="1517834466064" duration="8772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29782000" />
+    <option name="totallyTimeSpent" value="34469000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -265,7 +257,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25426438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25426438" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -318,14 +310,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cphbusiness/pagh/Db2.java</url>
-          <line>25</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -353,11 +338,10 @@
         <state relative-caret-position="2397">
           <caret line="146" column="5" lean-forward="false" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#dbWriter#0;class#Database#0" expanded="false" />
             <element signature="method#dbReader#0;class#Database#0" expanded="false" />
             <element signature="method#finder#0;class#Database#0" expanded="false" />
-            <element signature="method#findWithIndex#0;class#Database#0" expanded="false" />
             <element signature="method#setIndexMap#0;class#Database#0" expanded="false" />
           </folding>
         </state>
@@ -386,11 +370,10 @@
         <state relative-caret-position="2565">
           <caret line="171" column="9" lean-forward="true" selection-start-line="171" selection-start-column="9" selection-end-line="171" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#dbWriter#0;class#Database#0" expanded="false" />
             <element signature="method#dbReader#0;class#Database#0" expanded="false" />
             <element signature="method#finder#0;class#Database#0" expanded="false" />
-            <element signature="method#findWithIndex#0;class#Database#0" expanded="false" />
             <element signature="method#setIndexMap#0;class#Database#0" expanded="false" />
           </folding>
         </state>
@@ -419,11 +402,10 @@
         <state relative-caret-position="1105">
           <caret line="65" column="21" lean-forward="false" selection-start-line="65" selection-start-column="21" selection-end-line="65" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#dbWriter#0;class#Database#0" expanded="false" />
             <element signature="method#dbReader#0;class#Database#0" expanded="false" />
             <element signature="method#finder#0;class#Database#0" expanded="false" />
-            <element signature="method#findWithIndex#0;class#Database#0" expanded="false" />
             <element signature="method#setIndexMap#0;class#Database#0" expanded="false" />
           </folding>
         </state>
@@ -450,14 +432,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.txt" />
-    <entry file="file://$PROJECT_DIR$/data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="372" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1184" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cphbusiness/pagh/DataModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -466,30 +440,161 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="372" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1184" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/MANIFEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/DatabaseAssignmentOneKasperPagh/cphbusiness/pagh/MANIFEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cphbusiness/pagh/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        <state relative-caret-position="190">
+          <caret line="164" column="0" lean-forward="false" selection-start-line="164" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="method#dbWriter#0;class#Database#0" expanded="false" />
             <element signature="method#dbReader#0;class#Database#0" expanded="false" />
             <element signature="method#finder#0;class#Database#0" expanded="false" />
-            <element signature="method#findWithIndex#0;class#Database#0" expanded="false" />
             <element signature="method#setIndexMap#0;class#Database#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/KasperPaghDB/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MANIFEST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cphbusiness/pagh/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="442">
+          <caret line="26" column="63" lean-forward="true" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor>
+            <show-content>
+              <type id="artifact" />
+              <type id="jpa-descriptors" />
+              <type id="library" />
+              <type id="javaee-facet-resources" />
+            </show-content>
+          </artifact-editor>
+          <last-edited>KasperDB</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DatabaseAssignmentOneKasperPagh</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

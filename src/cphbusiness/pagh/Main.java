@@ -36,7 +36,7 @@ public class Main
         }
         finally
         {
-            System.out.println(indexMap.toString());
+//            System.out.println(indexMap.toString());
         }
 
 
