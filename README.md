@@ -5,7 +5,7 @@ This project is written in java, and as such you need all the usual java stuff t
 
 
 I would have very much liked to just provide you with a .jar file, but for some reason i can't get 
-java to understand where the entry point for my application is and time is running shot :)
+java to understand where the entry point for my application is and time is running short :)
 
 Therefore ill just give you the easy way to do it
 
