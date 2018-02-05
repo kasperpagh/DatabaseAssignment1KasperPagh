@@ -9,9 +9,10 @@ import java.util.regex.Pattern;
 
 public class Database
 {
-    HashMap<String, String> indexMap = Main.indexMap;
-
-    public boolean dbWriter(DataModel data)
+    /*
+    Writes a given DataModel object to the DB, assuming no key-collosions and no numbers in the data
+     */
+    public boolean dbWriter(DataModel data) throws UnsupportedEncodingException
     {
         File file;
         file = new File("data");
@@ -25,6 +26,14 @@ public class Database
             {
                 e.printStackTrace();
             }
+        }
+        if (Main.indexMap != null && Main.indexMap.containsKey(data.getKey()))
+        {
+            return false;
+        }
+        if (data.getData().matches(".*\\d+.*"))
+        {
+            return false;
         }
         try (FileOutputStream fop = new FileOutputStream(file, true))
         {
@@ -55,11 +64,13 @@ public class Database
         {
             e.printStackTrace();
         }
+        setIndexMap();
         return true;
-
     }
 
-
+    /*
+    Reads the entire DB and returns it as an ASCII string.
+     */
     public String dbReader() throws UnsupportedEncodingException
     {
         File file;
@@ -94,9 +105,9 @@ public class Database
         }
 
         String res = new String(result, "US-ASCII");
-        int splitSize = 8;
+        int splitSize = 8; //If another encoding is chosen, this can be changed to the number of bits pr. char in that encoding
 
-        if (res.length() % splitSize == 0) //tjekker om antallet af bits, går op med 8 (altså bytes)
+        if (res.length() % splitSize == 0) //tjekker om antallet af bits, går op med 8 (altså 1 byte == 1 ascii char)
         {
             int index = 0;
             int position = 0;
@@ -117,11 +128,14 @@ public class Database
         }
         else
         {
-            return "not mod 8";
+            return "not mod 8"; // IE. The number of bits doesn't match up to any sensible ascii chars. Because 8 bit pr char.
         }
 
     }
 
+    /*
+    Finds a given record, without the use of an index
+     */
     public String finder(int key) throws UnsupportedEncodingException
     {
         Pattern pattern = Pattern.compile("#" + key + ",(.*?)#");
@@ -143,9 +157,12 @@ public class Database
         }
     }
 
+    /*
+    Finds a given record, through the use of the index
+     */
     public String findWithIndex(int key) throws UnsupportedEncodingException
     {
-        String index = indexMap.get("" + key);
+        String index = Main.indexMap.get("" + key);
         String[] bitBorders = index.split("-");
 
         try
@@ -158,11 +175,14 @@ public class Database
         }
     }
 
-
+    /*
+    Sets the index, is called each time a new record is added.
+     */
     public void setIndexMap() throws UnsupportedEncodingException
     {
+
         String db = dbReader();
-        indexMap = new HashMap<>();
+        Main.indexMap = new HashMap<>();
         List<String> keys = new ArrayList<>();
         Pattern p = Pattern.compile("\\d+");
         Matcher m = p.matcher(db);
@@ -175,11 +195,11 @@ public class Database
         {
             if (i == keys.size() - 1)
             {
-                indexMap.put(keys.get(i), ((db.indexOf(keys.get(i)) * 8) - 8) + "-");
+                Main.indexMap.put(keys.get(i), ((db.indexOf(keys.get(i)) * 8) - 8) + "-");
             }
             else
             {
-                indexMap.put(keys.get(i), (db.indexOf(keys.get(i)) * 8) - 8 + "-" + ((db.indexOf(keys.get(i + 1)) * 8) - 8));
+                Main.indexMap.put(keys.get(i), (db.indexOf(keys.get(i)) * 8) - 8 + "-" + ((db.indexOf(keys.get(i + 1)) * 8) - 8));
             }
 
         }
